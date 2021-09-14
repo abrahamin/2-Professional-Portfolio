@@ -27,17 +27,19 @@ body {
 }
 
 h1 {
-    font-size: 300%;
+    font-size: 350%;
 }
 
 nav ul {
     display: flex;
     justify-content: space-between;
-    min-width: 300px;
+    min-width: 400px;
+    list-style-type: none;
 }
 
 nav a {
     color: lightgoldenrodyellow;
+    font-size: 120%;
     font-weight: bold;
     text-decoration: underline;
     text-underline-offset: 5px;
@@ -102,6 +104,8 @@ main section {
 }
 
 #projects {
+    position: relative;
+    display: flex;
     flex: 78%;
     padding: 0 1%;
     height: auto;
@@ -112,8 +116,10 @@ main section {
 #card-1 {
     flex: 80%;
     margin: 2%;
-    min-height: 300px;
+    min-height: 500px;
     border: black solid 2px;
+    background-image: "./assets/images/wave.jpg";
+    opacity: 70%;
 }
 
 .card {
@@ -121,6 +127,17 @@ main section {
     margin: 2%;
     min-height: 200px;
     border: black solid 2px;
+    opacity: 70%;
+}
+
+#projects header {
+    position: absolute;
+    background-color: var(--light);
+    color: var(--dark);
+    border: 2px solid var(--medium);
+    height: 100px;
+    width: auto;
+    opacity: 100%;
 }
 
 /* contact me */
@@ -139,41 +156,23 @@ main section {
     justify-content: flex-start;
     min-width: 500px;
     padding: 0 2%;
+    list-style-type: none;
 }
 
 #socials li {
     padding: 0 2%;
 }
 
-/* #section-2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0 1%;
-}
-
-
-#card-1 {
-    flex: 2 0 200%;
-    border-style: solid;
-    border-width: 1px;
-    padding: 10px;
-    margin: 10px;
-}
-
-.card {
-    position: relative;
-    flex: 1 0 100%;
-    border-style: solid;
-    border-width: 1px;
-    padding: 10px;
-    margin: 10px;
-} */
-
 footer {
     background-color: darkslategray;
     color: white;
     padding: 1%;
+}
+
+#card-1:hover,
+.card:hover {
+    box-shadow: inset 0px 0px 8px black, 0 0 15px black;
+    opacity: 100%;
 }
 
 @media screen and (max-width: 968px) {
