@@ -1,6 +1,13 @@
-/* * {
+:root {
+    --dark: darkblue;
+    --medium: blue;
+    --light: lightblue;
+}
+
+* {
     box-sizing: border-box;
-} */
+}
+
 
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -9,12 +16,13 @@ body {
     line-height: 1.2;
 }
 
+/* header section */
 #header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: darkslategray;
-    color: white;
+    background-color: var(--dark);
+    color: var(--light);
     padding: 1%;
 }
 
@@ -35,82 +43,158 @@ nav a {
     text-underline-offset: 5px;
 }
 
-aside {
+/* aside section */
+aside section {
     display: flex;
-    flex-direction: row-reverse;
-    background-color: darkolivegreen;
-    color: white;
-    padding: 10% 5% 1%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: var(--medium);
+    color: var(--light);
+    padding: 3% 5% 1%;
+}
+
+#headshot {
+    width: 200px;
+    border-radius: 5%;
+    height: auto;
 }
 
 h2 {
     font-size: 200%;
 }
 
+/* main section */
 main section {
     display: flex;
+    flex-direction: row;
     padding: 3% 0;
 }
 
+/* about me */
 #about-me {
-    width: 200px;
-    height: 100px;
+    flex: 18%;
+    height: auto;
     font-size: 200%;
     text-align: right;
-    padding: 0 2%;
-    border-right: 5px solid darkslategray;
-}
-
-#work {
-    width: 200px;
-    height: 800px;
-    font-size: 200%;
-    text-align: right;
-    padding: 0 2%;
-    border-right: 5px solid darkslategray;
-}
-
-#contact-me {
-    width: 200px;
-    height: 80px;
-    font-size: 200%;
-    text-align: right;
-    padding: 0 2%;
-    border-right: 5px solid darkslategray;
+    padding: 0 1%;
+    border-right: 5px solid var(--medium);
 }
 
 #bio {
-    padding: 0 2%;
+    flex: 78%;
+    padding: 0 1%;
+
+}
+
+/* work */
+#section-2 {
+    flex-direction: row;
+}
+
+#work {
+    flex: 18%;
+    height: auto;
+    font-size: 200%;
+    text-align: right;
+    padding: 0 1%;
+    border-right: 5px solid var(--medium);
 }
 
 #projects {
+    flex: 78%;
+    padding: 0 1%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
-    padding: 0 2%;
+}
+
+#card-1 {
+    flex: 80%;
+    margin: 2%;
+    min-height: 300px;
+    border: black solid 2px;
 }
 
 .card {
-    flex: 1 0 200px;
+    flex: 40%;
+    margin: 2%;
+    min-height: 200px;
+    border: black solid 2px;
+}
+
+/* contact me */
+#contact-me {
+    flex: 18%;
+    height: auto;
+    font-size: 200%;
+    text-align: right;
+    padding: 0 1%;
+    border-right: 5px solid var(--medium);
+}
+
+#socials {
+    flex: 78%;
+    display: flex;
+    justify-content: flex-start;
+    min-width: 500px;
+    padding: 0 2%;
+}
+
+#socials li {
+    padding: 0 2%;
+}
+
+/* #section-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 1%;
+}
+
+
+#card-1 {
+    flex: 2 0 200%;
     border-style: solid;
     border-width: 1px;
     padding: 10px;
     margin: 10px;
 }
 
-#project-1 {
-    flex: 2 0 900px;
-}
-
-#socials {
-    display: flex;
-    justify-content: space-between;
-    min-width: 500px;
-    padding: 0 2%;
-}
+.card {
+    position: relative;
+    flex: 1 0 100%;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    margin: 10px;
+} */
 
 footer {
     background-color: darkslategray;
     color: white;
     padding: 1%;
+}
+
+@media screen and (max-width: 968px) {
+    .card {
+        flex: 80%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    #section-1,
+    #section-2,
+    #section-3 {
+        flex-direction: column;
+    }
+
+    #about-me,
+    #work,
+    #contact-me {
+        flex: 100%;
+        text-align: center;
+        border-right: 0;
+        padding: 3% 0;
+    }
 }
