@@ -4,11 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
         <title>abrahamin - Portfolio</title>
-        <!-- <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"/> -->
+        <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"/>
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
 
         <style>
-            section #card-1 {
+            #photo-1,
+            #banner {
                 background-repeat: no-repeat;
                 background-size: cover;
             }
@@ -29,39 +30,77 @@
         </header>
 
         <aside>
-            <section>
+            <section id="banner" style="background-image: url('./assets/images/banner.jpg');">
                 <div>
                     <img id="headshot" src=./assets/images/headshot.png alt="headshot">
                 </div>
-                <h2>Subtitle</h2>
+                <h2>Welcome to my page!</h2>
             </section>
         </aside>
 
         <main>
             <section id="section-1">
                 <h3 id="about-me">About<br>Me</h3>
-                <p id="bio">
-                    My name is Abraham Ha-Min Hong, and I am an aspiring software engineer.
-                </p>
+                <div id="bio">
+                    <p>
+                        Hi, my name is Abraham Ha-Min Hong and I am an Atlanta-based, aspiring full-stack developer.
+                    </p>
+                    <p>
+                        Currently, I am enrolled in the Georgia Tech Coding Boot Camp (Fall 2021) and plan to further my experience within the tech industry.
+                    </p>
+                    <p>
+                        I am constantly honing the various skills acquired through this program and beyond, including HTML + CSS + JavaScript.
+                    </p>
+                    <p>
+                        In doing so, I alway strive to stay a step ahead of the rapidly evolving tech industry and its various languages.
+                    </p>
+                    <p>
+                        Here, you can find some of the works I have decided to showcase as a representation of my progress so far. 
+                    </p>
+                    <p>
+                        For more information, please refer to the contact options provided.
+                    </p>
+                </div>
             </section>
             <section id="section-2">
                 <h3 id="work">Work</h3>
                 <section id="projects">
-                    <section id=card-1 style="background-image: url('./assets/images/wave.jpg');">
-                        <header>Project 1</header>
-                    </section>
-                    <section class="card" style="background-image: url('./assets/images/led.jpg');">
-                        <header>Project 2</header>
-                    </section>
-                    <section class="card" style="background-image: url('./assets/images/gears.jpg');">
-                        <header>Project 3</header>
-                    </section>
-                    <section class="card" style="background-image: url('./assets/images/puzzle.jpg');">
-                        <header>Project 4</header>
-                    </section>
-                    <section class="card" style="background-image: url('./assets/images/globe.jpg');">
-                        <header>Project 5</header>
-                    </section>
+
+                    <div id="card-1">
+                        <header id="header-1">Surf Report
+                            <p>MERN Stack</p>
+                        </header>
+                        <section id="photo-1" style="background-image: url('./assets/images/wave.jpg');"></section>
+                    </div>
+                    
+                    <div class="card">
+                        <header class="header">LED Wall
+                            <p>Node/IoT</p>
+                        </header>
+                        <section class="photo" style="background-image: url('./assets/images/led.jpg');"></section>
+                    </div>
+
+                    <div class="card">
+                        <header class="header">Code Refactor
+                            <p>HTML/CSS</p>
+                        </header>
+                        <section class="photo" style="background-image: url('./assets/images/gears.jpg');"></section>
+                    </div>
+
+                    <div class="card">
+                        <header class="header">Pastel Puzzles
+                            <p>MERN Stack</p>
+                        </header>
+                        <section class="photo" style="background-image: url('./assets/images/puzzle.jpg');"></section>
+                    </div>
+                    
+                    <div class="card">
+                        <header class="header">Run Buddy
+                            <p>React/JavaScript/CSS</p>
+                        </header>
+                        <section class="photo" style="background-image: url('./assets/images/globe.jpg');"></section>
+                    </div>
+
                 </section>
             </section>
             <section id="section-3">
@@ -76,7 +115,7 @@
         </main>
 
         <footer>
-
+            @abrahamin
         </footer>
     </body>
 </html>
