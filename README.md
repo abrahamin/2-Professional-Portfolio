@@ -11,10 +11,6 @@ In order to meet the Acceptance Criteria of the project:
 * a section with titled images of my work allows the viewer to access the deployed application upon click
 * resizing the page or viewing the site via mobile devices will be accounted for by a responsive layout
 
-```
-NOTE: As I do not have enough web applications to showcase for now, some of the included images and links serve as placeholders.
-```
-
 ## Screenshot
 
 ![Professional Portfolio](/assets/images/portfolio.png)
